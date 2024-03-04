@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Webschool managing</title>
+
+<link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/CSS/Styles.css">
+  <style>
+    .lightBox {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+      z-index: 1000;
+      background-color: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .card_webschool {
+      margin: auto;
+    }
+
+    .btn-secondary {
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+
+
+
+<body>
+<nav class="navbar navbar-dark  bg-dark flex-md-nowrap p-0 shadow-sm">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Final exam in JavaScript</a>
+   
+  </nav>
+  
+  <div class="container-fluid">
+
+    <div class="row">
+
+      
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+          
+            <li class="nav-item">
+              <a class="nav-link active" href="listUser.html">
+                <span data-feather="file"></span>
+                Liste des etudiants
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="addUser.html">
+                <span data-feather="shopping-cart"></span>
+                Ajouter un etudiant
+              </a>
+            </li>
+          
+           
+          </ul>
+  
+  
+        </div>
+      </nav>
+
+      <main role="main" class="col-md-10 px-4">
+
+        <h2 class="my-5 ">Liste des etudiants</h2>
+  
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Formation</th>
+              <th scope="col">Nom</th>
+              <th scope="col">Teoudat Zeut</th>
+              <th scope="col">Expiration</th>
+              <th scope="col">Carte</th>
+              <th scope="col">Supprimer</th>
+            </tr>
+          </thead>
+          <tbody id="usersTable">
+
+            <tr>
+              <th scope="row">3</th>
+              <td>Javascript</td>
+              <td>Maurice Cohen</td>
+              <td>38826252</td>
+              <td>28.11.2020</td>
+              <td><button type="button" class="btn btn-info"> Creation de carte</button></td>
+              <td><button type="button" class="btn btn-danger">X</button></td>
+            </tr>
+            
+          </tbody>
+        </table>
+
+      </main>
+    </div>
+  </div>
+
+
+  <div class="lightBox">
+    <button type="button" class="btn btn-secondary" onclick="closeLb()">fermer</button>
+    <div class="card mb-3 card_webschool">
+      <div class="row no-gutters">
+        <div class="col-md-4 align-self-center">
+          <img src="WebschoolLogo-PNG300.png" class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title mt-4 mb-0">Carte etudiant</h5>
+            <p class="card-text mb-2 font-weight-bold">Formation: TAFORMATION</p>
+            <p class="card-text mb-0 font-weight-bold">MON NOM COMPLET</p>
+            <p class="card-text m-0">ID: 63552427</p>
+            <p class="card-text"><small class="text-muted">Valable 29.03.2023</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<script type="text/JavaScript" src="functions.js"></script>
+
+
+  
+</body>
+</html>

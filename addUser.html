@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Webschool managing</title>
+
+  <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/CSS/Styles.css">
+
+</head>
+
+<body>
+<nav class="navbar navbar-dark bg-dark flex-md-nowrap p-0 shadow-sm">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Final exam in JavaScript</a>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="listUser.html">
+              <span data-feather="file"></span>
+              Liste des etudiants
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="addUser.html">
+              <span data-feather="shopping-cart"></span>
+              Ajouter un etudiant
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-10 px-4">
+      <h2 class="my-4">Ajouter un etudiant</h2>
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <label for="student_name">Nom</label>
+          <input type="text" class="form-control" id="student_name" name="student_name">
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="student_cours">Nom de la formation</label>
+          <input type="text" class="form-control" id="student_cours" name="student_cours">
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="student_tz">Teoudat Zeut</label>
+          <input type="text" class="form-control" id="student_tz" name="student_tz">
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="student_date">Expiration</label>
+          <input type="date" class="form-control" id="student_date" name="student_date">
+        </div>
+      </div>
+      <hr class="mb-4">
+      <button class="btn btn-primary btn-lg" type="submit" onclick="addStudent()">Ajouter</button>
+    </main>
+  </div>
+</div>
+
+<script type="text/JavaScript" src="functions.js"></script>
+
+
+</body>
+</html>
